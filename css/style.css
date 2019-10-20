@@ -1,0 +1,560 @@
+/* header */
+body{
+    overflow-x:  hidden;
+}
+.header{
+    background: white;
+    color:black;
+    text-decoration: none;
+    margin: 30px;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+}
+nav{
+    border-bottom: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+/* endheader */
+
+
+/* accueil */
+.logo{
+    width: 20%;
+    left:40%;
+    top: -550px;
+    position: relative;
+    border: 1px solid red;
+    padding: 15px;
+    outline: 10px solid white;
+    z-index: 10000;
+    background: white;
+}
+.fondlog{
+    width: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+}
+.container-fondlog{
+    height: 700px;
+    overflow: hidden;
+}
+.fade{
+    top:0;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    font-size: 0.5em;
+    transition: opacity 4000ms,transform 800ms, font-size 800ms linear 400ms;
+    transform:translateX(-1500px);
+}
+.right{
+    transform:translateX(1500px);
+    opacity: 0;
+    font-size: 0.5em;
+    transition: opacity 4000ms,transform 800ms, font-size 800ms linear 400ms;
+}
+.history{
+    margin-top: -382px;
+    background: #AE2431;
+    padding: 70px;
+    min-height: 400px;
+}
+.impr{
+   
+    background: #AE2431;
+    padding: 70px;
+    height: 450px;
+    text-align: center;
+    color: white;
+}
+.title-histo{
+    /* text-align: center; */
+    padding-bottom: 35px;
+    
+}
+#slide-home
+{
+	width: 100%;
+	height: 500px;
+	background: url(../img/affiche_pub.jpg) no-repeat fixed;
+	background-position: 50% opx;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.btn_contact
+{
+	position: absolute;
+	top: 300px;
+    left: calc(50% - 75px);
+    font-size: 2em;
+    color: white;
+    border: 2px solid white;
+    background: #AE2431;
+    padding: 10px;
+}
+.btn_contact:hover{
+    background: #8C8C8C;
+    border: 2px solid #AE2431;
+    transition: all 500ms ease-out;
+    
+}
+
+.btn_infos 
+{
+    margin-top: 15px;
+    color: white;
+    border: 2px solid white;
+    background: #8C8C8C;
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
+}
+.btn_infos:hover{
+    transition: all 500ms ease-out;
+    background: white;
+    color: black;
+}
+.btn_infoscon
+{
+    margin-top: 15px;
+    color: white;
+    border: 2px solid white;
+    background: #AE2431;
+    padding: 10px;
+}
+.btn_infoscon:hover{
+    color: black;
+    border: 2px solid white;
+    background: white;
+    transition: all 500ms ease-out;
+
+}
+/* endaccueil */
+
+
+/* footer */
+.footer{
+    background: #6A6967;
+    height: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact{
+    color: white;
+    text-align: justify;
+    width: 25%;
+    height: 66%;
+    padding-left: 8%;
+    
+}
+.logofooter{
+    width: 25%;
+    height: 66%;
+    
+
+}
+.logofooter img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.link{
+    color: white;
+    text-align: center;
+    width: 33%;
+    height: 66%;
+}
+.catalogue{
+    text-decoration: white;
+    color: white;
+}
+.catalogue:hover{
+    border-bottom: 1px solid white;
+}
+/* endfooter */
+
+
+/* showroom */
+.logoshow{
+    width: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    position: relative;
+}
+.plaquette{
+    width: 15vw;
+    height: 15vw;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.plaquette:hover{
+position: relative;
+bottom: 5px;
+transition-duration: 300ms;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.plaquette-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.title-show{
+    color: #AE2431;
+}
+/* endshowroom */
+
+
+/* form contact */
+.erreur{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 50px 0;
+}
+.map      /* carte  */
+{
+    min-width: 300px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bg-red{ /* affichag de l'erreur du remplissage des champs  */
+   
+    position: relative;
+    /* top: 100px; */
+    font-size: 0.9em;
+}
+.bg-green /* affichage du success de l'envoie du formaulaire par mail */
+{
+   
+    position: relative;
+    /* top: 100px; */
+    font-size: 0.9em;
+}
+legend /* nom des formulaires  */
+{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.forminput /* input 1er formulaire */
+{
+    width: 300px;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+}
+.formlabel { /* label 1er formulaire */
+    margin-left: 10px;
+}
+
+.textarea /* champ message */
+{
+    border: 1px solid black;
+    margin-left: 10px;
+    
+}
+
+.coo /* coordonnées de l'entreprise*/
+{
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+}
+.ads  /* adresse de l'entreprise */
+{
+    text-align: center;
+}
+
+.envoyer /* bouton envoyer */
+{
+    margin-left: 10px;
+    background-color: #AE2431;
+    color: white;
+}
+
+
+/* endformcontact */
+/* produit */
+.ajax-links{
+    width: 200px;
+    border-right: 1px solid white;
+    transition: all 500ms ease-out;
+    background: #6A6967;
+
+
+}
+.cata{
+    border: 1px solid grey;
+    background: #9E9E9E;
+    color:white;
+    padding: 5px;
+    
+}
+.ajax-links[ajax-target='target-1'][focus='true']{
+background: #ECFF00;
+color: black;
+
+}
+.ajax-links[ajax-target='target-2'][focus='true']{
+background: red;
+}
+.ajax-links[ajax-target='target-3'][focus='true']{
+background: green;
+}
+.ajax-links[ajax-target='target-4'][focus='true']{
+background: blue;
+}
+.ajax-links[ajax-target='target-5'][focus='true']{
+background: pink;
+}
+.ajax-links[ajax-target='target-6'][focus='true']{
+background: violet;
+}
+.img-product{
+    width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.text{
+    margin: 25px;
+    text-align: justify
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    line-height: 35px;
+}
+/* mentions legales */
+.mentionleg{
+    padding-top: 150px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+.men{
+    margin-left: 35px;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+/* responsive */
+@media screen and (max-width : 1370px){
+    .history{
+    margin-top: -278px;
+    }
+    
+}
+
+
+@media screen and (max-width : 680px){
+   
+    /* showroom */
+       .plaquette{
+        width: 35vw;
+        height: 35vw;
+    }
+    .logoshow{
+        width: 50%;
+        
+    }
+   /* contact */
+   .erreur{
+       display: block;
+       text-align: center;
+   }
+   .formcontact /* premier formulaire */
+   {
+       padding-top: 70px;
+       width: 100%;
+   }
+   .contact2 /* 2e "formulaire" avec coordonées de l'entreprise et carte */
+   {
+       width: 100%; 
+       padding-top: 70px;
+   }
+       /* footer */
+      .footer{
+          width: 100%;
+          height: 100%;
+          padding: 20px 0;
+      }
+      .logofooter{
+          display: none;
+      }
+      .contact{
+          width: 50%;
+      }
+      .link{
+       width: 50%;
+      }
+      /* accueil */
+      .impr{
+          height: 650px;
+      }   
+      .history{
+          margin-top: -98px;
+      }
+      .container-fondlog{
+       height: 323px;
+   }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

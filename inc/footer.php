@@ -44,6 +44,8 @@ $(function() {
         <script>
                 $(document).ready(function(){
                 $(window).on('scroll', function(){
+                        // offset récupère les coordonnées 
+                        
             posTop = $('.history').offset().top - $(window).scrollTop()
             if(posTop < 1400) {
                 $('.fade').css({

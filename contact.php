@@ -36,7 +36,7 @@ include 'inc/header.php';
  <div class="formcontact">
 <form class="form-horizontal" action="formulaire.php" method="post" name="contact">
 <fieldset>
-    <legend >Nous contacter</legend>
+    <legend class="legend">Nous contacter</legend>
     <div class="form-group">
         <div class="col-3 col-sm-12">
         <label class="formlabel">Nom:</label>
@@ -111,7 +111,7 @@ include 'inc/header.php';
             <p class="coo">Tél: 03 21 84 01 39</p>
             <p class="coo">Mail: opale-color@wanadoo.fr</p>
      <div class="map"><!-- Carte -->
-                <iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.6016006469726565%2C50.44843222370322%2C1.6973876953125002%2C50.4796297196224&amp;layer=mapnik&amp;marker=50.46403354423154%2C1.6494941711425781" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.4640&amp;mlon=1.6495#map=14/50.4640/1.6495&amp;layers=N">Afficher une carte plus grande</a></small>
+                <iframe class="iframe"width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.6016006469726565%2C50.44843222370322%2C1.6973876953125002%2C50.4796297196224&amp;layer=mapnik&amp;marker=50.46403354423154%2C1.6494941711425781" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.4640&amp;mlon=1.6495#map=14/50.4640/1.6495&amp;layers=N">Afficher une carte plus grande</a></small>
     </div>
 
 </fieldset>
